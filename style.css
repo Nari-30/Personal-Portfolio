@@ -232,8 +232,10 @@ html {
 
 /* Skills Section */
 #skills {
-  margin: 20px;
-  padding: 50px 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
   text-align: center;
 }
 
@@ -253,21 +255,28 @@ html {
   border-radius: 2px;   
 }
 
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.skills-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
 }
 
 .skill-card {
-  flex: 0 0 calc(50% - 20px);
-  max-width: calc(50% - 20px);
+  width: 500px;              /* Reduce card width */
+  max-width: 100%;
   background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
 }
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
 @media (max-width: 768px) {
   .skills-container {
     grid-template-columns: 1fr;
