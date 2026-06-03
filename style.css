@@ -60,6 +60,16 @@ header {
   cursor: pointer;
   color: #666;
 }
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
 
 /* Hero Section */
 .hero {
@@ -138,6 +148,25 @@ header {
   background-color: #fff;
   color: #ff6600;
   border-color: #ff6600;
+}
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 30px;
+    min-height: auto;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+  }
+
+  .hero-img img {
+    width: 220px;
+    max-width: 100%;
+  }
 }
 
 
